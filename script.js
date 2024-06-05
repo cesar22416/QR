@@ -1,9 +1,11 @@
-const contenedorQR = document.getElementById('contenedorQR');
-const formulario = document.getElementById('formulario');
+document.addEventListener('DOMContentLoaded', () => {
+    const contenedorQR = document.getElementById('contenedorQR');
+    const formulario = document.getElementById('formulario');
 
-const QR = new QRCode(contenedorQR);
-
-formulario.addEventListener('submit', (e) => {
-	e.preventDefault();
-	QR.makeCode(formulario.link.value);
+    formulario.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const link = document.getElementById('link').value;
+        contenedorQR.innerHTML = '';
+        new QRCode(contenedorQR, link);
+    });
 });
