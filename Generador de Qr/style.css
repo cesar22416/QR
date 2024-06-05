@@ -2,11 +2,15 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	background: #f2f2f2;
+	
 }
 
 body {
 	font-family: 'Open Sans', sans-serif;
+	background-image: url(https://firebasestorage.googleapis.com/v0/b/cesar22.appspot.com/o/fondo-abstracto-blanco-brillo-dorado.jpg?alt=media&token=9d38832e-f808-4673-9036-24f071ed0ca2);
+	background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .contenedor {
@@ -18,7 +22,7 @@ body {
 .formulario input[type='text'] {
 	padding: 20px;
 	border: none;
-	background: #fff;
+	background: none;
 	width: 100%;
 	border-radius: 5px;
 	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
